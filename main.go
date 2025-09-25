@@ -9,13 +9,11 @@ import (
 	"github.com/gorilla/mux"
 )
 
-// Struct User
 type User struct {
-	ID   int    json:"id"
-	Name string json:"name"
+	ID   int    `json:"id"`
+	Name string `json:"name"`
 }
 
-// Data sementara (slice)
 var users []User
 var nextID = 1
 
